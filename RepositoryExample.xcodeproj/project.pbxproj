@@ -25,6 +25,9 @@
 		1D9A58BE19614F6E006CB73F /* LRTVShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A58BA19614F6E006CB73F /* LRTVShow.m */; };
 		1D9A58BF19614F6E006CB73F /* LRTVShowParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A58BC19614F6E006CB73F /* LRTVShowParser.m */; };
 		1D9A58C119615260006CB73F /* LRTVShowTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A58C019615260006CB73F /* LRTVShowTest.m */; };
+		1D9A58C41961617B006CB73F /* IHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A58C31961617B006CB73F /* IHRepository.m */; };
+		1D9A58C7196161C6006CB73F /* IHDownloadInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A58C6196161C6006CB73F /* IHDownloadInteractor.m */; };
+		1D9A58C919616316006CB73F /* IHDownloadInteractorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A58C819616316006CB73F /* IHDownloadInteractorTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,11 @@
 		1D9A58BB19614F6E006CB73F /* LRTVShowParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTVShowParser.h; sourceTree = "<group>"; };
 		1D9A58BC19614F6E006CB73F /* LRTVShowParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTVShowParser.m; sourceTree = "<group>"; };
 		1D9A58C019615260006CB73F /* LRTVShowTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTVShowTest.m; sourceTree = "<group>"; };
+		1D9A58C21961617B006CB73F /* IHRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHRepository.h; sourceTree = "<group>"; };
+		1D9A58C31961617B006CB73F /* IHRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHRepository.m; sourceTree = "<group>"; };
+		1D9A58C5196161C6006CB73F /* IHDownloadInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHDownloadInteractor.h; sourceTree = "<group>"; };
+		1D9A58C6196161C6006CB73F /* IHDownloadInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHDownloadInteractor.m; sourceTree = "<group>"; };
+		1D9A58C819616316006CB73F /* IHDownloadInteractorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHDownloadInteractorTest.m; sourceTree = "<group>"; };
 		2550F11601AF48F387F1F36E /* libPods-RepositoryExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RepositoryExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7999198BE256407686857C3D /* Pods-RepositoryExampleTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryExampleTests.xcconfig"; path = "Pods/Pods-RepositoryExampleTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,8 +150,12 @@
 				1D9A589219614F4F006CB73F /* Main.storyboard */,
 				1D9A589519614F4F006CB73F /* IHViewController.h */,
 				1D9A589619614F4F006CB73F /* IHViewController.m */,
+				1D9A58C21961617B006CB73F /* IHRepository.h */,
+				1D9A58C31961617B006CB73F /* IHRepository.m */,
 				1D9A589819614F4F006CB73F /* Images.xcassets */,
 				1D9A588719614F4F006CB73F /* Supporting Files */,
+				1D9A58C5196161C6006CB73F /* IHDownloadInteractor.h */,
+				1D9A58C6196161C6006CB73F /* IHDownloadInteractor.m */,
 			);
 			path = RepositoryExample;
 			sourceTree = "<group>";
@@ -164,6 +176,7 @@
 			children = (
 				1D9A58A619614F4F006CB73F /* Supporting Files */,
 				1D9A58C019615260006CB73F /* LRTVShowTest.m */,
+				1D9A58C819616316006CB73F /* IHDownloadInteractorTest.m */,
 			);
 			path = RepositoryExampleTests;
 			sourceTree = "<group>";
@@ -315,7 +328,9 @@
 				1D9A589119614F4F006CB73F /* IHAppDelegate.m in Sources */,
 				1D9A58BE19614F6E006CB73F /* LRTVShow.m in Sources */,
 				1D9A58BD19614F6E006CB73F /* LRBaseModel.m in Sources */,
+				1D9A58C7196161C6006CB73F /* IHDownloadInteractor.m in Sources */,
 				1D9A589719614F4F006CB73F /* IHViewController.m in Sources */,
+				1D9A58C41961617B006CB73F /* IHRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D9A58C119615260006CB73F /* LRTVShowTest.m in Sources */,
+				1D9A58C919616316006CB73F /* IHDownloadInteractorTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

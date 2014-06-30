@@ -32,16 +32,16 @@
 }
 
 - (void)testTVShowAttributes {
-    NSDictionary *showDictionary = @{@"title" : @"titulo", @"overview" : @"myOverview", @"network" : @"myNetwork", @"premierDate": [NSDate date], @"tracktURL":[NSURL URLWithString:@"URL"], @"posterURL":[NSURL URLWithString:@"URL2"]};
+    NSDictionary *showDictionary = @{@"title" : @"titulo", @"overview" : @"myOverview", @"network" : @"myNetwork", @"first_aired": @715676400 , @"url":@"URL", @"poster":@"URL2"};
     
     self.sut = [LRTVShow tvshowWithDictionary:showDictionary];
     
     expect(self.sut.title).to.equal(showDictionary[@"title"]);
     expect(self.sut.overview).to.equal(showDictionary[@"overview"]);
     expect(self.sut.network).to.equal(showDictionary[@"network"]);
-//    expect(self.sut.premiereDate).to.equal(showDictionary[@"premierDate"]);
-//    expect(self.sut.traktURL).to.equal(showDictionary[@"tracktURL"]);
-//    expect(self.sut.posterURL).to.equal(showDictionary[@"posterURL"]);
+    expect(self.sut.premiereDate).to.equal([NSDate dateWithTimeIntervalSince1970:[showDictionary[@"first_aired"] doubleValue]]);
+    expect(self.sut.traktURL).to.equal([NSURL URLWithString:showDictionary[@"url"]]);
+    expect(self.sut.posterURL).to.equal([NSURL URLWithString:showDictionary[@"poster"]]);
 }
 
 
