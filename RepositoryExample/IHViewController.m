@@ -22,6 +22,7 @@
 
 - (void)didReceiveMemoryWarning
 {
+    // New author commit test
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
