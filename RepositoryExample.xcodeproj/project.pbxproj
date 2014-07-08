@@ -28,6 +28,10 @@
 		1D9A58C41961617B006CB73F /* IHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A58C31961617B006CB73F /* IHRepository.m */; };
 		1D9A58C7196161C6006CB73F /* IHDownloadInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A58C6196161C6006CB73F /* IHDownloadInteractor.m */; };
 		1D9A58C919616316006CB73F /* IHDownloadInteractorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A58C819616316006CB73F /* IHDownloadInteractorTest.m */; };
+		1DA5D514196BE44800C4DC51 /* IHDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5D512196BE44800C4DC51 /* IHDetailViewController.m */; };
+		1DA5D515196BE44800C4DC51 /* IHDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DA5D513196BE44800C4DC51 /* IHDetailViewController.xib */; };
+		1DA5D519196BE46A00C4DC51 /* IHDetailViewControllerProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5D518196BE46A00C4DC51 /* IHDetailViewControllerProvider.m */; };
+		1DA5D51B196BE63500C4DC51 /* IHViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5D51A196BE63500C4DC51 /* IHViewControllerTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,13 @@
 		1D9A58C5196161C6006CB73F /* IHDownloadInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHDownloadInteractor.h; sourceTree = "<group>"; };
 		1D9A58C6196161C6006CB73F /* IHDownloadInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHDownloadInteractor.m; sourceTree = "<group>"; };
 		1D9A58C819616316006CB73F /* IHDownloadInteractorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHDownloadInteractorTest.m; sourceTree = "<group>"; };
+		1DA5D511196BE44800C4DC51 /* IHDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHDetailViewController.h; sourceTree = "<group>"; };
+		1DA5D512196BE44800C4DC51 /* IHDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHDetailViewController.m; sourceTree = "<group>"; };
+		1DA5D513196BE44800C4DC51 /* IHDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IHDetailViewController.xib; sourceTree = "<group>"; };
+		1DA5D517196BE46A00C4DC51 /* IHDetailViewControllerProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHDetailViewControllerProvider.h; sourceTree = "<group>"; };
+		1DA5D518196BE46A00C4DC51 /* IHDetailViewControllerProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHDetailViewControllerProvider.m; sourceTree = "<group>"; };
+		1DA5D51A196BE63500C4DC51 /* IHViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHViewControllerTest.m; sourceTree = "<group>"; };
+		1DA5D51C196BEBCA00C4DC51 /* IHViewController_PublicTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHViewController_PublicTest.h; sourceTree = "<group>"; };
 		2550F11601AF48F387F1F36E /* libPods-RepositoryExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RepositoryExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7999198BE256407686857C3D /* Pods-RepositoryExampleTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryExampleTests.xcconfig"; path = "Pods/Pods-RepositoryExampleTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +113,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D6A53A019637F5700558075 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D9A58C5196161C6006CB73F /* IHDownloadInteractor.h */,
+				1D9A58C6196161C6006CB73F /* IHDownloadInteractor.m */,
+				1D9A58C21961617B006CB73F /* IHRepository.h */,
+				1D9A58C31961617B006CB73F /* IHRepository.m */,
+				1D9A58BB19614F6E006CB73F /* LRTVShowParser.h */,
+				1D9A58BC19614F6E006CB73F /* LRTVShowParser.m */,
+				1D9A58B519614F6E006CB73F /* LRBaseModel.h */,
+				1D9A58B619614F6E006CB73F /* LRBaseModel.m */,
+				1D9A58B719614F6E006CB73F /* LRBaseModelMappings.h */,
+				1D9A58B819614F6E006CB73F /* LRBaseModelSerializable.h */,
+				1D9A58B919614F6E006CB73F /* LRTVShow.h */,
+				1D9A58BA19614F6E006CB73F /* LRTVShow.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1D6A53A119637F6600558075 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1D9A588F19614F4F006CB73F /* IHAppDelegate.h */,
+				1D9A589019614F4F006CB73F /* IHAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1D6A53A219637F7B00558075 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1DA5D516196BE45A00C4DC51 /* VCProvider */,
+				1D9A589519614F4F006CB73F /* IHViewController.h */,
+				1D9A589619614F4F006CB73F /* IHViewController.m */,
+				1DA5D511196BE44800C4DC51 /* IHDetailViewController.h */,
+				1DA5D512196BE44800C4DC51 /* IHDetailViewController.m */,
+				1DA5D513196BE44800C4DC51 /* IHDetailViewController.xib */,
+				1DA5D51C196BEBCA00C4DC51 /* IHViewController_PublicTest.h */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1D6A53A319637F8E00558075 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D9A589219614F4F006CB73F /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		1D9A587419614F4F006CB73F = {
 			isa = PBXGroup;
 			children = (
@@ -137,25 +198,11 @@
 		1D9A588619614F4F006CB73F /* RepositoryExample */ = {
 			isa = PBXGroup;
 			children = (
-				1D9A58B519614F6E006CB73F /* LRBaseModel.h */,
-				1D9A58B619614F6E006CB73F /* LRBaseModel.m */,
-				1D9A58B719614F6E006CB73F /* LRBaseModelMappings.h */,
-				1D9A58B819614F6E006CB73F /* LRBaseModelSerializable.h */,
-				1D9A58B919614F6E006CB73F /* LRTVShow.h */,
-				1D9A58BA19614F6E006CB73F /* LRTVShow.m */,
-				1D9A58BB19614F6E006CB73F /* LRTVShowParser.h */,
-				1D9A58BC19614F6E006CB73F /* LRTVShowParser.m */,
-				1D9A588F19614F4F006CB73F /* IHAppDelegate.h */,
-				1D9A589019614F4F006CB73F /* IHAppDelegate.m */,
-				1D9A589219614F4F006CB73F /* Main.storyboard */,
-				1D9A589519614F4F006CB73F /* IHViewController.h */,
-				1D9A589619614F4F006CB73F /* IHViewController.m */,
-				1D9A58C21961617B006CB73F /* IHRepository.h */,
-				1D9A58C31961617B006CB73F /* IHRepository.m */,
-				1D9A589819614F4F006CB73F /* Images.xcassets */,
+				1D6A53A019637F5700558075 /* Model */,
+				1D6A53A119637F6600558075 /* AppDelegate */,
+				1D6A53A319637F8E00558075 /* View */,
+				1D6A53A219637F7B00558075 /* Controller */,
 				1D9A588719614F4F006CB73F /* Supporting Files */,
-				1D9A58C5196161C6006CB73F /* IHDownloadInteractor.h */,
-				1D9A58C6196161C6006CB73F /* IHDownloadInteractor.m */,
 			);
 			path = RepositoryExample;
 			sourceTree = "<group>";
@@ -163,6 +210,7 @@
 		1D9A588719614F4F006CB73F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1D9A589819614F4F006CB73F /* Images.xcassets */,
 				1D9A588819614F4F006CB73F /* RepositoryExample-Info.plist */,
 				1D9A588919614F4F006CB73F /* InfoPlist.strings */,
 				1D9A588C19614F4F006CB73F /* main.m */,
@@ -177,6 +225,7 @@
 				1D9A58A619614F4F006CB73F /* Supporting Files */,
 				1D9A58C019615260006CB73F /* LRTVShowTest.m */,
 				1D9A58C819616316006CB73F /* IHDownloadInteractorTest.m */,
+				1DA5D51A196BE63500C4DC51 /* IHViewControllerTest.m */,
 			);
 			path = RepositoryExampleTests;
 			sourceTree = "<group>";
@@ -188,6 +237,15 @@
 				1D9A58A819614F4F006CB73F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DA5D516196BE45A00C4DC51 /* VCProvider */ = {
+			isa = PBXGroup;
+			children = (
+				1DA5D517196BE46A00C4DC51 /* IHDetailViewControllerProvider.h */,
+				1DA5D518196BE46A00C4DC51 /* IHDetailViewControllerProvider.m */,
+			);
+			name = VCProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +329,7 @@
 			files = (
 				1D9A589919614F4F006CB73F /* Images.xcassets in Resources */,
 				1D9A588B19614F4F006CB73F /* InfoPlist.strings in Resources */,
+				1DA5D515196BE44800C4DC51 /* IHDetailViewController.xib in Resources */,
 				1D9A589419614F4F006CB73F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,8 +386,10 @@
 				1D9A58BF19614F6E006CB73F /* LRTVShowParser.m in Sources */,
 				1D9A589119614F4F006CB73F /* IHAppDelegate.m in Sources */,
 				1D9A58BE19614F6E006CB73F /* LRTVShow.m in Sources */,
+				1DA5D519196BE46A00C4DC51 /* IHDetailViewControllerProvider.m in Sources */,
 				1D9A58BD19614F6E006CB73F /* LRBaseModel.m in Sources */,
 				1D9A58C7196161C6006CB73F /* IHDownloadInteractor.m in Sources */,
+				1DA5D514196BE44800C4DC51 /* IHDetailViewController.m in Sources */,
 				1D9A589719614F4F006CB73F /* IHViewController.m in Sources */,
 				1D9A58C41961617B006CB73F /* IHRepository.m in Sources */,
 			);
@@ -340,6 +401,7 @@
 			files = (
 				1D9A58C119615260006CB73F /* LRTVShowTest.m in Sources */,
 				1D9A58C919616316006CB73F /* IHDownloadInteractorTest.m in Sources */,
+				1DA5D51B196BE63500C4DC51 /* IHViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

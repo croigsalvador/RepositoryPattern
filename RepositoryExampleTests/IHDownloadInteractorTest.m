@@ -19,7 +19,7 @@
 @interface IHDownloadInteractorTest : XCTestCase
 
 @property (strong, nonatomic) IHDownloadInteractor *sut;
-@property (strong, nonatomic) IHRepository *repository;
+@property (strong, nonatomic) IHRepository *mocRepository;
 
 @end
 
@@ -28,8 +28,8 @@
 - (void)setUp
 {
     [super setUp];
-    self.repository = mock([IHRepository class]);
-    self.sut = [[IHDownloadInteractor alloc] initWithRepository:self.repository];
+    self.mocRepository = mock([IHRepository class]);
+    self.sut = [[IHDownloadInteractor alloc] initWithRepository:self.mocRepository];
 }
 
 - (void)tearDown
@@ -40,7 +40,7 @@
 
 - (void)testDownloadsWorking {
     [self.sut download];
-    [verify(self.repository) downloadShows];
+    [verify(self.mocRepository) downloadShows];
 }
 
 

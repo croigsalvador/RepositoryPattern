@@ -23,7 +23,7 @@
 }
 
 - (void)download {
-//    [self.repository downloadShows];
+    [self.repository downloadShows];
 }
 
 @end

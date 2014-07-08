@@ -7,12 +7,33 @@
 //
 
 #import "IHAppDelegate.h"
+#import "IHViewController.h"
+#import "IHDownloadInteractor.h"
+#import "IHRepository.h"
+#import "IHDetailViewControllerProvider.h"
 
 @implementation IHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    IHRepository *repo = [[IHRepository alloc] init];
+    IHDetailViewControllerProvider *vcProvider = [[IHDetailViewControllerProvider alloc] init];
+    IHDownloadInteractor *downInte = [[IHDownloadInteractor alloc] initWithRepository:repo];
+    IHViewController *vc1 = [[IHViewController alloc] initWithDownloadInteractor:downInte vcProvider:vcProvider];
+
+
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc1];
+
+    [self.window makeKeyAndVisible];
+    
+    
+
+    
+    
+    
     return YES;
 }
 							
