@@ -11,30 +11,30 @@
 #import "IHDownloadInteractor.h"
 #import "IHRepository.h"
 #import "IHDetailViewControllerProvider.h"
+#import "IHAssembly.h"
+#import "TyphoonBlockComponentFactory.h"
 
 @implementation IHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
-    IHRepository *repo = [[IHRepository alloc] init];
-    IHDetailViewControllerProvider *vcProvider = [[IHDetailViewControllerProvider alloc] init];
-    IHDownloadInteractor *downInte = [[IHDownloadInteractor alloc] initWithRepository:repo];
-    IHViewController *vc1 = [[IHViewController alloc] initWithDownloadInteractor:downInte vcProvider:vcProvider];
+    if (isRunningTests()) return YES;
+    TyphoonComponentFactory *factory = [[TyphoonBlockComponentFactory alloc] initWithAssembly:[IHAssembly assembly]];
+    IHViewController *vc1 = [factory componentForType:[IHViewController class]];
 
-
-    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc1];
 
     [self.window makeKeyAndVisible];
     
-    
-
-    
-    
-    
     return YES;
+}
+
+NS_INLINE BOOL isRunningTests(void)
+{
+    NSDictionary *environment = [[NSProcessInfo processInfo] environment];
+    NSString *injectBundle = environment[@"XCInjectBundle"];
+    return [[injectBundle pathExtension] isEqualToString:@"xctest"];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

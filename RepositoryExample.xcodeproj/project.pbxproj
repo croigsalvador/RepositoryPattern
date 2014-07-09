@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		043CF0787984482BAC034C63 /* libPods-RepositoryExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2550F11601AF48F387F1F36E /* libPods-RepositoryExampleTests.a */; };
+		0E61F60027EE4C42A1265EB6 /* libPods-RepositoryExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 487ABCFA3F9445449B922109 /* libPods-RepositoryExample.a */; };
+		1D5F66E6196D375C002B363C /* IHAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5F66E5196D375C002B363C /* IHAssembly.m */; };
+		1D5F66EA196D4026002B363C /* IHMemStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5F66E9196D4026002B363C /* IHMemStorage.m */; };
+		1D5F66ED196D4034002B363C /* IHDiskStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5F66EC196D4034002B363C /* IHDiskStorage.m */; };
+		1D5F66F0196D403E002B363C /* IHNetworkStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5F66EF196D403E002B363C /* IHNetworkStorage.m */; };
 		1D9A588119614F4F006CB73F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9A588019614F4F006CB73F /* Foundation.framework */; };
 		1D9A588319614F4F006CB73F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9A588219614F4F006CB73F /* CoreGraphics.framework */; };
 		1D9A588519614F4F006CB73F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9A588419614F4F006CB73F /* UIKit.framework */; };
@@ -45,6 +50,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D5F66E4196D375C002B363C /* IHAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHAssembly.h; sourceTree = "<group>"; };
+		1D5F66E5196D375C002B363C /* IHAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHAssembly.m; sourceTree = "<group>"; };
+		1D5F66E7196D3EF2002B363C /* IHStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHStorage.h; sourceTree = "<group>"; };
+		1D5F66E8196D4026002B363C /* IHMemStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHMemStorage.h; sourceTree = "<group>"; };
+		1D5F66E9196D4026002B363C /* IHMemStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHMemStorage.m; sourceTree = "<group>"; };
+		1D5F66EB196D4034002B363C /* IHDiskStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHDiskStorage.h; sourceTree = "<group>"; };
+		1D5F66EC196D4034002B363C /* IHDiskStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHDiskStorage.m; sourceTree = "<group>"; };
+		1D5F66EE196D403E002B363C /* IHNetworkStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHNetworkStorage.h; sourceTree = "<group>"; };
+		1D5F66EF196D403E002B363C /* IHNetworkStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHNetworkStorage.m; sourceTree = "<group>"; };
 		1D9A587D19614F4F006CB73F /* RepositoryExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepositoryExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9A588019614F4F006CB73F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D9A588219614F4F006CB73F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -85,6 +99,8 @@
 		1DA5D51A196BE63500C4DC51 /* IHViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHViewControllerTest.m; sourceTree = "<group>"; };
 		1DA5D51C196BEBCA00C4DC51 /* IHViewController_PublicTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHViewController_PublicTest.h; sourceTree = "<group>"; };
 		2550F11601AF48F387F1F36E /* libPods-RepositoryExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RepositoryExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		300A5514123D455A9719B5DE /* Pods-RepositoryExample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryExample.xcconfig"; path = "Pods/Pods-RepositoryExample.xcconfig"; sourceTree = "<group>"; };
+		487ABCFA3F9445449B922109 /* libPods-RepositoryExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RepositoryExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7999198BE256407686857C3D /* Pods-RepositoryExampleTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryExampleTests.xcconfig"; path = "Pods/Pods-RepositoryExampleTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +112,7 @@
 				1D9A588319614F4F006CB73F /* CoreGraphics.framework in Frameworks */,
 				1D9A588519614F4F006CB73F /* UIKit.framework in Frameworks */,
 				1D9A588119614F4F006CB73F /* Foundation.framework in Frameworks */,
+				0E61F60027EE4C42A1265EB6 /* libPods-RepositoryExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +130,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D5F66E3196D3730002B363C /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				1D5F66E4196D375C002B363C /* IHAssembly.h */,
+				1D5F66E5196D375C002B363C /* IHAssembly.m */,
+			);
+			name = Assemblies;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		1D6A53A019637F5700558075 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +155,13 @@
 				1D9A58B819614F6E006CB73F /* LRBaseModelSerializable.h */,
 				1D9A58B919614F6E006CB73F /* LRTVShow.h */,
 				1D9A58BA19614F6E006CB73F /* LRTVShow.m */,
+				1D5F66E7196D3EF2002B363C /* IHStorage.h */,
+				1D5F66E8196D4026002B363C /* IHMemStorage.h */,
+				1D5F66E9196D4026002B363C /* IHMemStorage.m */,
+				1D5F66EB196D4034002B363C /* IHDiskStorage.h */,
+				1D5F66EC196D4034002B363C /* IHDiskStorage.m */,
+				1D5F66EE196D403E002B363C /* IHNetworkStorage.h */,
+				1D5F66EF196D403E002B363C /* IHNetworkStorage.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -171,6 +205,7 @@
 				1D9A587F19614F4F006CB73F /* Frameworks */,
 				1D9A587E19614F4F006CB73F /* Products */,
 				7999198BE256407686857C3D /* Pods-RepositoryExampleTests.xcconfig */,
+				300A5514123D455A9719B5DE /* Pods-RepositoryExample.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,6 +226,7 @@
 				1D9A588419614F4F006CB73F /* UIKit.framework */,
 				1D9A589F19614F4F006CB73F /* XCTest.framework */,
 				2550F11601AF48F387F1F36E /* libPods-RepositoryExampleTests.a */,
+				487ABCFA3F9445449B922109 /* libPods-RepositoryExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,6 +234,7 @@
 		1D9A588619614F4F006CB73F /* RepositoryExample */ = {
 			isa = PBXGroup;
 			children = (
+				1D5F66E3196D3730002B363C /* Assemblies */,
 				1D6A53A019637F5700558075 /* Model */,
 				1D6A53A119637F6600558075 /* AppDelegate */,
 				1D6A53A319637F8E00558075 /* View */,
@@ -255,9 +292,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D9A58AF19614F4F006CB73F /* Build configuration list for PBXNativeTarget "RepositoryExample" */;
 			buildPhases = (
+				B08BBA479FE54BD1BB079CB6 /* Check Pods Manifest.lock */,
 				1D9A587919614F4F006CB73F /* Sources */,
 				1D9A587A19614F4F006CB73F /* Frameworks */,
 				1D9A587B19614F4F006CB73F /* Resources */,
+				80A435EE0BC146BA81D5EACE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -360,6 +399,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		80A435EE0BC146BA81D5EACE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-RepositoryExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B08BBA479FE54BD1BB079CB6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		D47CDFFC6EE0464AB3D9D089 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,10 +454,14 @@
 				1D9A588D19614F4F006CB73F /* main.m in Sources */,
 				1D9A58BF19614F6E006CB73F /* LRTVShowParser.m in Sources */,
 				1D9A589119614F4F006CB73F /* IHAppDelegate.m in Sources */,
+				1D5F66F0196D403E002B363C /* IHNetworkStorage.m in Sources */,
+				1D5F66ED196D4034002B363C /* IHDiskStorage.m in Sources */,
 				1D9A58BE19614F6E006CB73F /* LRTVShow.m in Sources */,
 				1DA5D519196BE46A00C4DC51 /* IHDetailViewControllerProvider.m in Sources */,
 				1D9A58BD19614F6E006CB73F /* LRBaseModel.m in Sources */,
+				1D5F66EA196D4026002B363C /* IHMemStorage.m in Sources */,
 				1D9A58C7196161C6006CB73F /* IHDownloadInteractor.m in Sources */,
+				1D5F66E6196D375C002B363C /* IHAssembly.m in Sources */,
 				1DA5D514196BE44800C4DC51 /* IHDetailViewController.m in Sources */,
 				1D9A589719614F4F006CB73F /* IHViewController.m in Sources */,
 				1D9A58C41961617B006CB73F /* IHRepository.m in Sources */,
@@ -515,6 +588,7 @@
 		};
 		1D9A58B019614F4F006CB73F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 300A5514123D455A9719B5DE /* Pods-RepositoryExample.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -528,6 +602,7 @@
 		};
 		1D9A58B119614F4F006CB73F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 300A5514123D455A9719B5DE /* Pods-RepositoryExample.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

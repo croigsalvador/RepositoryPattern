@@ -11,7 +11,7 @@
 @implementation IHRepository
 
 - (void)downloadShows {
-    NSLog(@"Hello");
+    
 }
 
 @end
